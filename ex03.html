@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizzbuzz</title>
+</head>
+<body>
+    <script>
+        const resultado=fizzbuzz()
+        console.log(resultado)
+        function fizzbuzz(entrada){
+            if (typeof entrada!=='number'){
+                return 'Not a number!'
+            }
+            if(entrada%3===0 && entrada%5===0){
+                return('FIZZBUZZ')
+            }
+            if(entrada%3===0){
+                return('FIZZ')
+            }
+            if(entrada%5===0){
+                return('BUZZ')
+            }
+            else{
+                return(entrada)
+            }
+        }
+    </script>
+</body>
+</html>

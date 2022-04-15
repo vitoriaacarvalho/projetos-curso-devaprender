@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex13</title>
+</head>
+<body>
+    <script>
+        function post(title, msg, autor, watching, comments, live){
+            return{
+                title,
+                msg, 
+                autor,
+                watching,
+                comments,
+                live
+            }
+        }
+        const blog=post('THE DIFFERENCE BETWEEN SOFTWARE AND HARDWARE', 'EVERYTHING YOU NEED TO KNOW', 'Sheldon Cooper', 200000, 'hello world!', true)
+        console.log(blog)
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex12</title>
+</head>
+<body>
+    <script>
+        //igualdade de arrays
+        function physicist(name,age,so){
+            this.name=name
+            this.age= age
+            this.so= so
+        }   
+        const physicistTwo= new physicist('sheldon', 29, 'amy')
+        const physicistThree= new physicist('sheldon', 29, 'amy')
+        // teste de dinamica: physicistTwo.bff='leonard'
+        function checking(physicistTwo, physicistThree){
+            if (physicistTwo.name === physicistThree.name && physicistTwo.age===physicistThree.age && physicistTwo.so===physicistThree.so) return 'as duas arrays são iguais'
+            return 'diferentes' 
+        } 
+        console.log(checking(physicistTwo, physicistThree))
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex11</title>
+</head>
+<body>
+    <script>
+        //trabalhando com factory functions criar um objeto endereço que contém:
+        //rua, cidade, CEP
+        //exibir o endereço()
+        function endereco(rua,cidade,cep,){
+            return {
+                rua,
+                cidade,
+                cep,
+            }
+        }
+        const endereco1=endereco('maria do carmo','joão pessoa', 12345678910,)
+        console.log(endereco1)
+    </script>
+</body>
+</html>
